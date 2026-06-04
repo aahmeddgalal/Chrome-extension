@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #inputField {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+        }
+        #sendButton {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: 1px solid #007BFF;
+            cursor: pointer;
+        }
+        #sendButton:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        #inputField:focus {
+            border-color: #0056b3;
+            outline: 1px solid #0056b3;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputField" placeholder="Enter some text">
+    <button id="sendButton">SAVE INPUT</button>
+    <script src="script.js"></script>
+    <ul id="output"></ul>
+</body>
+</html>
