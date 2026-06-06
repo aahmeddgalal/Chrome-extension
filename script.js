@@ -11,7 +11,7 @@ const inputBtn = document.getElementById("sendButton")
 const clearBtn = document.getElementById("clearButton")
 
 clearBtn.addEventListener("click", function() {
-    localStorage.removeItem("myLeads")
+    localStorage.clear()
     myLeads = []
     render()
 })
