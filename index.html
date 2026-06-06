@@ -8,6 +8,8 @@
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            min-width: 400px ;
         }
         #inputField {
             width: 100%;
@@ -17,27 +19,45 @@
             border: 1px solid #007BFF;
             border-radius: 4px;
         }
-        #sendButton {
+        #sendButton,
+        #clearButton {
             padding: 10px 20px;
             background-color: #007BFF;
             color: white;
             border: 1px solid #007BFF;
             cursor: pointer;
         }
-        #sendButton:hover {
+        #sendButton:hover,
+        #clearButton:hover {
             background-color: #0056b3;
             border-color: #0056b3;
         }
-        #inputField:focus {
+        #inputField:focus,
+        #sendButton:focus,
+        #clearButton:focus {
             border-color: #0056b3;
             outline: 1px solid #0056b3;
             border-radius: 4px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #0056b3;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <input type="text" id="inputField" placeholder="Enter some text">
     <button id="sendButton">SAVE INPUT</button>
+    <button id="clearButton">CLEAR</button>
     <script src="script.js"></script>
     <ul id="output"></ul>
 </body>
